@@ -1,18 +1,16 @@
+import { ColoredMessage } from "./components/ColoredMessage";
+
 export const App = () => {
   // ボタンを押した時に実行する関数を定義
   const onClickButton = () => {
     alert();
   }
-
-  // CSSオブジェクト
-  const contentStyle = {
-    color: "blue",
-    fontSize: "20px"
-  }
   return (
     <>
       <h1 style={{ color: "red" }}>こんにちは！</h1>
-      <p style={{contentStyle}}>お元気ですか？</p>
+      <ColoredMessage />
+      <ColoredMessage color="blue">お元気ですか？</ColoredMessage>
+      <ColoredMessage color="pink">元気です！</ColoredMessage>
       <button onClick={onClickButton}>ボタン</button>
     </>
   );
