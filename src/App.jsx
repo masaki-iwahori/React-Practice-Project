@@ -4,6 +4,7 @@ import { CssModules } from "./components/CssModules";
 import { Emotion } from "./components/Emotion";
 import { StyledComponents } from "./components/StyledComponents";
 import { StyledJsx } from "./components/StyledJsx";
+import { TailwindCss } from "./components/TailwindCss";
 
 export const App = () => {
   console.log("レンダリング");
@@ -27,6 +28,7 @@ export const App = () => {
       <StyledJsx />
       <StyledComponents />
       <Emotion />
+      <TailwindCss />
     </>
   );
 }
